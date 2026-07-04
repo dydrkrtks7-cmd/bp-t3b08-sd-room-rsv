@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <title>신도림 룸싸롱 예약 블로그 - 티3비08 인사이트</title>
+    <meta name="description" content="신도림 룸싸롱 예약, 진짜 품격을 원한다면 읽어라. 티3비08이 전하는 압도적 밤문화의 기술. 010-6279-0862">
+    <meta name="keywords" content="신도림 룸싸롱, 신도림 룸싸롱 예약, 신도림 룸싸롱 블로그, 티3비08, 신도림 밤문화, 룸싸롱 꿀팁">
+    <link rel="canonical" href="https://t3b08-sd-room-rsv.vercel.app/blog">
+    <meta property="og:title" content="신도림 룸싸롱 예약 블로그 - 티3비08">
+    <meta property="og:description" content="신도림 룸싸롱 예약, 평범함은 거부한다. 티3비08이 전하는 진짜 밤을 위한 인사이트.">
+    <meta property="og:url" content="https://t3b08-sd-room-rsv.vercel.app/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://t3b08-sd-room-rsv.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="신도림 룸싸롱 예약 블로그 - 티3비08">
+    <meta name="twitter:description" content="신도림 룸싸롱 예약, 티3비08의 날카로운 시선이 전하는 밤문화의 진실.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "신도림 룸싸롱 예약, 진짜 품격을 찾는 당신을 위한 단 하나의 선택",
+        "image": "https://t3b08-sd-room-rsv.vercel.app/og-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "티3비08"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "티3비08"
+        },
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15"
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background: #0a0e1a;
+            color: #e0e4f0;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #f0f4ff;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(100, 140, 255, 0.3);
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 40px 0 20px;
+            border-left: 4px solid #6a8cff;
+            padding-left: 16px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #c8d0e8;
+        }
+        a {
+            color: #6a8cff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #8aacff;
+            text-shadow: 0 0 12px rgba(106, 140, 255, 0.5);
+        }
+        .hero {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a2240 50%, #0d1225 100%);
+            overflow: hidden;
+            padding: 80px 20px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(106, 140, 255, 0.08) 0%, transparent 60%),
+                        radial-gradient(circle at 70% 60%, rgba(200, 160, 255, 0.05) 0%, transparent 50%);
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+        @keyframes heroGlow {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(20px, -20px) rotate(3deg); }
+        }
+        .hero h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 3.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .hero .subhead {
+            position: relative;
+            z-index: 2;
+            font-size: 1.3rem;
+            color: #a8b8e8;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero .cta {
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+        }
+        .hero .cta a {
+            display: inline-block;
+            padding: 16px 48px;
+            background: linear-gradient(135deg, #6a8cff, #8a5cff);
+            color: #fff;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 32px rgba(106, 140, 255, 0.3);
+            transition: all 0.4s ease;
+        }
+        .hero .cta a:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 48px rgba(106, 140, 255, 0.5);
+            background: linear-gradient(135deg, #8aacff, #a07cff);
+        }
+        nav {
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(106, 140, 255, 0.15);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #f0f4ff;
+            letter-spacing: -0.5px;
+        }
+        nav .logo span {
+            color: #6a8cff;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+        nav ul li a {
+            color: #b0b8d0;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f0f4ff;
+            border-bottom-color: #6a8cff;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2.5px;
+            background: #e0e4f0;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #6a8cff, #8a5cff);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(106, 140, 255, 0.4);
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 14, 26, 0.98);
+                padding: 20px;
+                gap: 16px;
+                border-bottom: 1px solid rgba(106, 140, 255, 0.2);
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero .subhead {
+                font-size: 1.05rem;
+            }
+            .hero {
+                min-height: 50vh;
+                padding: 60px 16px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+        .blog-content {
+            padding: 80px 0;
+        }
+        .blog-content .container {
+            max-width: 800px;
+        }
+        .blog-meta {
+            color: #8890b0;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .blog-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .blog-body {
+            background: rgba(20, 28, 50, 0.4);
+            border: 1px solid rgba(106, 140, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 20px;
+        }
+        .blog-body blockquote {
+            border-left: 4px solid #6a8cff;
+            padding: 16px 24px;
+            margin: 30px 0;
+            background: rgba(106, 140, 255, 0.05);
+            border-radius: 4px;
+            font-style: italic;
+            color: #a8b8e8;
+        }
+        .blog-body ul {
+            margin: 20px 0;
+            padding-left: 24px;
+            color: #c8d0e8;
+        }
+        .blog-body ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+        .blog-body strong {
+            color: #f0f4ff;
+        }
+        .blog-cta-section {
+            background: linear-gradient(135deg, rgba(106, 140, 255, 0.08), rgba(138, 92, 255, 0.08));
+            border: 1px solid rgba(106, 140, 255, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .blog-cta-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+        .blog-cta-section p {
+            margin-bottom: 24px;
+            color: #a8b8e8;
+        }
+        footer {
+            background: #060a14;
+            border-top: 1px solid rgba(106, 140, 255, 0.1);
+            padding: 40px 0;
+            text-align: center;
+            color: #687090;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #8890b0;
+        }
+        footer a:hover {
+            color: #6a8cff;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">T3<span>B08</span></div>
+            <ul id="nav-menu">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/blog" class="active">블로그</a></li>
+                <li><a href="/contact">문의</a></li>
+                <li><a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>신도림 룸싸롱 예약,<br>진짜 품격을 찾는 당신을 위한 단 하나의 선택</h1>
+            <p class="subhead">평범한 밤은 가라. 티3비08이 말하는 진짜 밤문화의 기준.</p>
+            <div class="cta">
+                <a href="tel:010-6279-0862">지금 예약: 010-6279-0862</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-meta">
+                <span>📅 2025.01.15</span>
+                <span>✍️ 티3비08 에디터</span>
+                <span>🏷️ 신도림 룸싸롱 예약</span>
+            </div>
+
+            <div class="blog-body">
+                <p><strong>솔직히 말해, 너도 알잖아?</strong> 대부분의 신도림 룸싸롱 예약은 거기서 거기야. 간판만 바꿔 달고 똑같은 시스템, 똑같은 서비스, 똑같은 지루함. 근데 왜 티3비08은 다를까? 답은 간단해. 우리는 '그냥 하는 척'에 돈 쓰라고 만든 곳이 아니니까.</p>
+
+                <p>신도림에서 진짜 밤을 즐기고 싶다면, 일단 생각을 바꿔야 해. "룸싸롱 = 술 마시고 노래 부르는 곳"이라는 공식은 여기서 통하지 않아. 티3비08은 <strong>퍼포먼스, 분위기, 그리고 완벽한 케미</strong>가 합쳐진 압도적인 경험을 제공하는 공간이야. 우리는 단순한 예약을 받는 게 아니라, 너의 밤을 설계해.</p>
+
+                <blockquote>
+                    "신도림에서 이 정도 퀄리티는 처음이다. 진짜 감동했어. 다음 주에도 또 올게." - 티3비08 단골 회원 K
+                </blockquote>
+
+                <h2>신도림 룸싸롱 예약, 왜 티3비08인가?</h2>
+                <p>네가 원하는 게 뭔지 우리는 안다. <strong>지루함 따위는 용납하지 않는 태도, 모든 디테일에 신경 쓴 공간, 그리고 한 번 경험하면 다른 곳은 생각나지 않게 만드는 마력.</strong> 티3비08은 그걸 현실로 만든다. 우리 시스템은 단순해. 최상의 서비스, 최고의 아티스트, 그리고 너를 위한 맞춤형 코스.</p>
+
+                <ul>
+                    <li><strong>압도적인 퍼포먼스:</strong> 무대 위 아티스트들은 그냥 있는 게 아니다. 진짜 퍼포먼스로 밤을 폭발시킨다.</li>
+                    <li><strong>완벽한 프라이빗:</strong> 너만의 공간, 너만의 시간. 누구에게도 방해받지 않는 진짜 프라이빗 파티.</li>
+                    <li><strong>24시간 실시간 예약:</strong> 지금 당장 전화해. 010-6279-0862. 우리
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta name="description" content="신도림 룸싸롱 예약, 이렇게 하면 완벽해. 위치, 가격, 시스템까지 다 알려줌. 지금 010-6279-0862로 전화해">
+    <meta name="keywords" content="신도림 룸싸롱, 신도림 룸싸롱 예약, 신도림 룸싸롱 정보, 신도림 유흥, 신도림 술집, 룸싸롱 예약, 신도림 가라오케, 신도림 밤문화">
+    <title>신도림 룸싸롱 정보 | 예약 전 꼭 알아야 할 것들</title>
+    <link rel="canonical" href="https://t3b08-sd-room-rsv.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="신도림 룸싸롱 예약 정보 | 진짜 프로들이 알려주는 꿀팁">
+    <meta property="og:description" content="신도림에서 제일 핫한 룸싸롱 정보 다 모았다. 위치, 가격대, 시스템까지 한눈에. 예약은 010-6279-0862">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
+            background: #1a1a1a;
+            color: #f0f0f0;
+            line-height: 1.3;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        /* BRUTALIST RAW TEXTURE (CSS-only) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px);
+            pointer-events: none;
+            z-index: 9999;
+        }
+        /* TYPOGRAPHY - Impact stack */
+        h1, h2, h3, .hero-title, .section-title, .nav-link, .cta-big {
+            font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 900;
+        }
+        h1 {
+            font-size: 4rem;
+            line-height: 0.9;
+            color: #ffd700;
+            text-shadow: 4px 4px 0 #000, 6px 6px 0 #ff4500;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            border-left: 8px solid #ff4500;
+            padding-left: 1rem;
+            margin: 2rem 0 1.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 0.8rem;
+        }
+        /* LINKS & BUTTONS */
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        a:hover {
+            color: #ff4500;
+            text-decoration: underline;
+        }
+        .cta-big {
+            display: inline-block;
+            background: #ff4500;
+            color: #fff;
+            padding: 1rem 2.5rem;
+            font-size: 1.8rem;
+            border: 4px solid #fff;
+            box-shadow: 8px 8px 0 #000;
+            text-transform: uppercase;
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+        .cta-big:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #000;
+            background: #ff6347;
+            text-decoration: none;
+            color: #fff;
+        }
+        /* LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        /* NAVIGATION */
+        nav {
+            background: #000;
+            border-bottom: 4px solid #ffd700;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-link:hover {
+            border-color: #ffd700;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .nav-link.active {
+            border-color: #ff4500;
+            color: #ff4500;
+        }
+        /* HAMBURGER MENU */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #000;
+                flex-direction: column;
+                padding: 1rem 0;
+                border-bottom: 4px solid #ffd700;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-link {
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                border: none;
+                border-bottom: 1px solid #333;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+        }
+        /* TEL LINK */
+        .tel-link {
+            font-size: 1.5rem;
+            color: #ffd700;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tel-link::before {
+            content: '📞';
+            font-size: 1.8rem;
+        }
+        /* HERO SECTION */
+        .hero {
+            padding: 4rem 0;
+            border-bottom: 4px solid #ff4500;
+            position: relative;
+        }
+        .hero::after {
+            content: '📍 신도림';
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            background: #ff4500;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transform: rotate(5deg);
+            box-shadow: 4px 4px 0 #000;
+        }
+        /* CARDS */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: #2a2a2a;
+            border: 3px solid #ffd700;
+            padding: 2rem;
+            box-shadow: 8px 8px 0 #000;
+            transition: all 0.2s;
+        }
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #000;
+        }
+        .card h3 {
+            color: #ffd700;
+            border-bottom: 3px solid #ff4500;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        /* INFO LIST */
+        .info-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        .info-list li {
+            padding: 1rem 0;
+            border-bottom: 2px solid #333;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .info-list li::before {
+            content: '🔥';
+            font-size: 1.5rem;
+        }
+        /* FAQ */
+        .faq-item {
+            background: #2a2a2a;
+            border: 2px solid #444;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-left: 6px solid #ffd700;
+        }
+        .faq-item h4 {
+            font-size: 1.4rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+        }
+        .faq-item p {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            color: #bbb;
+            line-height: 1.5;
+        }
+        /* FOOTER */
+        footer {
+            background: #000;
+            border-top: 4px solid #ffd700;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        footer p {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            color: #888;
+        }
+        .footer-tel {
+            font-size: 2rem;
+            color: #ffd700;
+            display: block;
+            margin: 1rem 0;
+        }
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero::after {
+                position: relative;
+                top: auto;
+                right: auto;
+                display: inline-block;
+                margin-top: 1rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .info-list li {
+                font-size: 1rem;
+                padding: 0.8rem 0;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div style="font-size: 1.5rem; color: #ffd700; font-weight: bold;">SINDORIM</div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/" class="nav-link">홈</a></li>
+            <li><a href="/info" class="nav-link active">정보</a></li>
+            <li><a href="/price" class="nav-link">가격</a></li>
+            <li><a href="/review" class="nav-link">후기</a></li>
+            <li><a href="tel:010-6279-0862" class="nav-link tel-link">010-6279-0862</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>신도림 룸싸롱<br>완벽 가이드</h1>
+            <p style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 1.3rem; color: #ddd; max-width: 700px;">
+                형, 처음 가는 거면 꼭 봐야 해. 내가 다 알려줄게. 위치부터 시스템까지 완전 정복!
+            </p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:010-6279-0862" class="cta-big">📞 지금 예약하기</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>📍 위치 & 접근성</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🚇 역에서 3분</h3>
+                    <p>신도림역 1번 출구에서 걸어서 3분. 지하철 타고 와도 완전 편해. 비 오는 날도 걱정 없어. 역 앞에서 우산 하나 덜렁 들고 오면 돼.</p>
+                </div>
+                <div class="card">
+                    <h3>🅿️ 주차 가능</h3>
+                    <p>차 가지고 와도 돼. 건물 전용 주차장 있어. 근데 주말에는 자리 없을 수 있으니까 미리 전화해서 물어보는 게 좋아. 010-6279-0862로 전화하면 다 알려줌.</p>
+                </div>
+                <div class="card">
+                    <h3>🏢 건물 정보</h3>
+                    <p>신도림동 메인 상가 4층. 엘리베이터 있음. 건물 앞에 편의점 있어서 술 먹기 전에 물とか 사기 좋아. ㅋㅋ</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>💡 이렇게 준비해</h2>
+            <ul class="info-list">
+                <li><strong>예약은 필수:</strong> 당일 예약도 가능한데, 주말에는 최소 2~3시간 전에 전화해. 010-6279-0862로 바로 걸어</li>
+                <li><strong>인원 확인:</strong> 보통 4명이 딱 좋아. 2명도 괜찮은데 4명 이상이면 분위기 더 살아나</li>
+                <li><strong>드레스 코드:</strong> 깔끔한 옷차림이면 돼. 정장까지는 아니어도 단정하게. 운동복은 좀 그래...</li>
+                <li><strong>가격대:</strong> 1인당 10~15만원 정도 생각하면 돼. 안주랑 술 포함이니까 부담 없어</li>
+                <li><strong>주차 등록:</strong> 발렛은 없고, 건물 주차장 무료로 쓸 수 있어. 근데 자리 한정이야</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🎤 시스템 & 서비스</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🎵 최신 가라오케</h3>
+                    <p>노래방 기계 완전 최신형이야. TJ미디어 최신곡 다 있음. 가수들 신곡도 바로바로 업데이트 돼. 형이 부르고 싶은 노래 다 있어.</p>
+                </div>
+                <div class="card">
+                    <h3>🍶 안주 퀄리티</h3>
+                    <p>여기 안주가 진짜야. 떡볶이, 감자튀김, 소시지볶음 이런 기본 안주가 아니라, 스테이크도 나오고 회도 나와. 가격 대비 퀄리티 미쳤어.</p>
+                </div>
+                <div class="card">
+                    <h3>👥 룸 시스템</h3>
+                    <p>방마다 테이블이랑 소파가 있고, 스크린이 크게 있어. 6명까지는 널널하게 앉아. 8명도 가능한데 좀 붙어야 함 ㅋㅋ</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🙋 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>Q. 처음 가도 괜찮아요?</h4>
+                <p>당연하지! 형, 처음 가는 사람이 더 재밌어. 직원들이 친절하게 다 알려줘. 처음이라고 긴장할 거 없어. 그냥 전화해서 "형 처음인데 괜찮아?" 하면 다 OK</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q. 여자친구랑 가도 돼요?</h4>
+                <p>완전 가능! 커플들도 많이 와. 오히려 분위기가 더 좋아. 노래 부르고 술 마시고, 둘이서
+</body>
+</html>
